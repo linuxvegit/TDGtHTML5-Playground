@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Working with Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="http://localhost:8080">
+</head>
+
+<body>
+    <!-- enctype: application/x-www-form-urlencoded, multipart/form-data, text/plain(unrecommended) -->
+    <!-- target: _blank, _parent, _self, _top, <frame> -->
+    <form action="/form" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off" target="_blank" name="fruitvote"
+        id="fruitvote">
+        <fieldset>
+            <!-- legend element must be the first element in fieldset element -->
+            <legend>Enter Your Details</legend>
+            <p>
+                <label for="name">Name:
+                    <input id="name" name="name" disabled/>
+                </label>
+            </p>
+            <p>
+                <label for="city">City:
+                    <input id="city" name="city" autocomplete="on" autofocus/>
+                </label>
+            </p>
+        </fieldset>
+        <fieldset disabled>
+            <legend>Vote For Your Three Favorite Fruits</legend>
+            <p>
+                <label for="fave1">#1:
+                    <input id="fave1" name="fave1" />
+                </label>
+            </p>
+            <p>
+                <label for="fave2">#2:
+                    <input id="fave2" name="fave2" />
+                </label>
+            </p>
+            <p>
+                <label for="fave3">#3:
+                    <input id="fave3" name="fave3" />
+                </label>
+            </p>
+        </fieldset>
+        <button type="submit" formaction="/form" formenctype="application/x-www-form-urlencoded" formmethod="POST" formtarget="_blank"
+            formnovalidate>Submit Vote</button>
+        <button type="reset">Reset</button>
+        <button type="button">Do
+            <strong>NOT</strong> press this button</button>
+    </form>
+    <button form="fruitvote" type="reset">Reset Button Outside Form</button>
+</body>
+
+</html>

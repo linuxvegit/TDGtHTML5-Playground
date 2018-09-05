@@ -1,0 +1,128 @@
+div {
+  clear: both;
+}
+
+#fruittext,
+#fruittext1 {
+  width: 400px;
+  margin: 5px;
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+}
+
+#fruittext1 {
+  white-space: pre-line;
+}
+
+#spacing p {
+  margin: 5px;
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  line-height: 3em;
+}
+
+#word-wrap p {
+  width: 150px;
+  margin: 15px;
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  float: left;
+}
+
+#word-wrap .first {
+  word-wrap: break-word;
+}
+
+#word-wrap .second {
+  word-wrap: normal;
+}
+
+#text-indent p {
+  margin: 15px;
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  float: left;
+  text-indent: 15%;
+}
+
+#text-detr p {
+  padding: 4px;
+  border: medium double black;
+  background-color: lightgray;
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+
+#text-shadow h1 {
+  text-shadow: 0.1em .1em 1px lightgray;
+}
+
+#text-shadow p {
+  text-shadow: 5px 5px 20px black;
+}
+
+#font-family p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  margin: 2px;
+  float: left;
+  font-family: "HelveticaNeue Condensed", monospace;
+}
+
+#font-size p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  margin: 2px;
+  float: left;
+  font-size: medium;
+}
+
+#font-size .first {
+  font-size: xx-large;
+}
+
+#font-size .second {
+  font-size: larger;
+}
+
+#font-west p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  margin: 2px;
+  float: left;
+  font-size: medium;
+}
+
+#font-west .first {
+  font-weight: bold;
+}
+
+#font-west .second {
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "MyFont";
+  font-style: normal;
+  font-weight: normal;
+  src: url('IndieFlower.ttf');
+}
+
+#font-face p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  margin: 2px;
+  float: left;
+  font-size: medium;
+  font-family: MyFont, cursive;
+}

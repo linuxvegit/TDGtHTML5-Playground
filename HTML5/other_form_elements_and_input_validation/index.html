@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Other Form Elements and Input Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <p>
+    <label for="fave">
+      Favorite Fruit:
+      <select name="fave" id="fave" size="5" multiple>
+        <optgroup label="Top Choices">
+          <option value="apples" selected label="Apples">Apples</option>
+          <option value="oranges" label="Oranges">Oranges</option>
+        </optgroup>
+        <optGroup label="Others">
+          <option value="cherries" label="Cherries">Cherries</option>
+          <option value="pears" label="Pears">Pears</option>
+        </optGroup>
+      </select>
+    </label>
+  </p>
+  <p>
+    <textarea name="story" id="story" cols="20" rows="5" wrap="hard">Tell us why this is your favorite fruit</textarea>
+  </p>
+  <form onsubmit="return false" oninput="res.value=quant.valueAsNumber * price.valueAsNumber">
+    <fieldset>
+      <legend>Price Calculator</legend>
+      <input type="number" placeholder="Quantity" id="quant" name="quant"> X
+      <input type="number" placeholder="Price" id="price" name="price"> =
+      <output for="quant name" name="res" />
+    </fieldset>
+
+    <p>
+      <keygen keytype="RSA" challenge="challenge phrase">
+    </p>
+
+    <p>
+      <label for="name">Name:
+        <input type="text" required id="name" name="name">
+      </label>
+    </p>
+    <p>
+      <label for="price">$ per unit in your area:
+        <input type="number" min="0" max="100" value="1" id="prise" name="prise">
+      </label>
+    </p>
+    <p>
+      <label for="full-name">Fullname:
+        <input type="text" id="full-name" name="full-name" pattern="^.* .*$">
+      </label>
+    </p>
+    <input type="submit" value="Submit">
+    <input type="submit" value="Save" formnovalidate>
+  </form>
+
+</body>
+
+</html>

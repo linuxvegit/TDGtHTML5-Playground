@@ -1,0 +1,124 @@
+:root {
+  border: thin black solid;
+  padding: 4px;
+}
+
+p>span:first-child {
+  border: thin aquamarine solid;
+  padding: 4px;
+}
+
+p>span:last-child {
+  border: thin cadetblue solid;
+  padding: 4px;
+}
+
+p>span:only-of-type {
+  border: thin firebrick solid;
+  padding: 4px;
+}
+
+p>span:only-child {
+  border: thin darkblue solid;
+  padding: 4px;
+}
+
+body> :nth-child(3) {
+  border: thin goldenrod solid;
+  padding: 4px;
+}
+
+body> :nth-last-child(2) {
+  border: thin hotpink solid;
+  padding: 4px;
+}
+
+body> :nth-of-type(2) {
+  border: thin indianred solid;
+  padding: 4px;
+}
+
+:enabled {
+  border: thin khaki solid !important;
+  padding: 4px;
+}
+
+:disabled {
+  border: thin lawngreen solid !important;
+  padding: 4px;
+}
+
+:checked+span {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border: medium solid black;
+}
+
+:default {
+  outline: medium red solid;
+}
+
+:valid {
+  outline: medium green solid;
+}
+
+:invalid {
+  outline: medium red solid;
+}
+
+[type="number"]:in-range {
+  outline: medium chartreuse solid;
+}
+
+[type="number"]:out-of-range {
+  outline: medium mediumvioletred solid;
+}
+
+:required {
+  outline: medium greenyellow solid;
+}
+
+:optional {
+  outline: medium rebeccapurple solid;
+}
+
+:link {
+  border: thin black solid;
+  background-color: lightgrey;
+  padding: 4px;
+  color: red;
+}
+
+:visited {
+  background-color: grey;
+  color: white;
+}
+
+:hover {
+  border: thin black solid;
+  padding: 4px;
+}
+
+:active {
+  border: thin blueviolet solid;
+  padding: 4px;
+}
+
+a:not([href*="apress"]) {
+  outline: thin navy solid;
+  padding: 4px;
+}
+
+:empty {
+  background-color: cornflowerblue;
+}
+
+:lang(en) {
+  outline: thick saddlebrown solid;
+  padding: 4px;
+}
+
+:target {
+  outline: thick peru solid;
+}

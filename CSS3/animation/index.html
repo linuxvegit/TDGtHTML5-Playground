@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div>
+    <h2>transition</h2>
+    <div id="transition">
+      <p>
+        There are lots of different kinds of fruit - there are over 500 varieties of <span class="banana">banana</span>
+        alone. By the time we add the countless type of apples, oranges, and other well-known fruit, we are faced with
+        thousands of choices.
+      </p>
+    </div>
+  </div>
+  <div>
+    <h2>Animation</h2>
+    <div id="animation">
+      <p>
+        There are lots of different kinds of fruit - there are over 500 varieties of <span class="banana">banana</span>
+        alone. By the time we add the countless type of apples, oranges, and other well-known fruit, we are faced with
+        thousands of choices.
+      </p>
+      <p><button>Running</button><button>Paused</button></p>
+      <script>
+        [...document.querySelectorAll('#animation button')].forEach(button => button.onclick = e => document.querySelector(
+          '#animation .banana').style.animationPlayState = e.target.innerHTML);
+      </script>
+    </div>
+  </div>
+  <div>
+    <h2>Transform</h2>
+    <div id="transform">
+      <p>
+        There are lots of different kinds of fruit - there are over 500 varieties of <span class="banana">banana</span>
+        alone. By the time we add the countless type of apples, oranges, and other well-known fruit, we are faced with
+        thousands of choices.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Using Box Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="padding">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+  <div id="padding2">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+  <div id="margin">
+    <img src="banana-small.png" alt="banana">
+    <img src="banana-small.png" alt="banana">
+  </div>
+  <div id="size">
+    <div>
+      <img src="banana-small.png" alt="small banana" class="first">
+      <img src="banana-small.png" alt="small banana" class="second">
+    </div>
+  </div>
+  <div id="size1">
+    <img src="banana-small.png" alt="small banana">
+  </div>
+  <div id="overflow">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+  <div id="overflow1">
+    <p class="first">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p class="second">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+  <div id="visibility">
+    <table>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Size</th>
+      </tr>
+      <tr id="firstchoice">
+        <th>Favorite:</th>
+        <td>Apples</td>
+        <td>Green</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <th>2nd Favorite:</th>
+        <td>Oranges</td>
+        <td>Orange</td>
+        <td>Large</td>
+      </tr>
+    </table>
+    <p>
+      <button>Visible</button>
+      <button>Collapse</button>
+      <button>Hidden</button>
+    </p>
+    <script>
+      var buttons = [...document.getElementsByTagName('BUTTON')];
+      buttons.forEach(button => button.onclick = (e) => document.getElementById('firstchoice').style.visibility = e.target
+        .innerHTML);
+    </script>
+  </div>
+  <div id="block">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p>
+      One of the most interesting aspects of fruit is the variety available in each country. <span>I live near London</span>,
+      in that area which is known for kinds of banana were available - many of which had unique flavours and which were
+      only available within a small region.
+    </p>
+  </div>
+  <div id="inline">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p>
+      One of the most interesting aspects of fruit is the variety available in each country. <span>I live near London</span>,
+      in that area which is known for kinds of banana were available - many of which had unique flavours and which were
+      only available within a small region.
+    </p>
+  </div>
+  <div id="inline-block">
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p>
+      One of the most interesting aspects of fruit is the variety available in each country. <span>I live near London</span>,
+      in that area which is known for kinds of banana were available - many of which had unique flavours and which were
+      only available within a small region.
+    </p>
+  </div>
+  <div id="run-in">
+    <span>There are lots of different kinds of fruit - there are over 500 varieties of banana alone.</span>
+    <p>By the time we add the countless type of apples, oranges, and other well-known fruit, we are faced with
+      thousands of choices. </p>
+  </div>
+  <div id="run-in1">
+    <span>There are lots of different kinds of fruit - there are over 500 varieties of banana alone.</span>
+    <p>By the time we add the countless type of apples, oranges, and other well-known fruit, we are faced with
+      thousands of choices. </p>
+  </div>
+  <div id="none">
+    <p id="toggle">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p>
+      One of the most interesting aspects of fruit is the variety available in each country. <span>I live near London</span>,
+      in that area which is known for kinds of banana were available - many of which had unique flavours and which were
+      only available within a small region.
+    </p>
+    <p>
+      <button>Block</button>
+      <button>None</button>
+    </p>
+    <script>
+      var buttons = [...document.querySelectorAll('#none button')];
+      buttons.forEach(button => button.onclick = (e) => document.getElementById('toggle').style.display = e.target.innerHTML);
+    </script>
+  </div>
+  <div id="float">
+    <p class="toggle">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p class="toggle">
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+    <p>
+      When travelling in Asia, I was struck by how many different kinds of banana were available - many of which hand
+      unique flavours and which were only available within a small region.
+    </p>
+    <p>
+      <button>Left</button>
+      <button>Right</button>
+      <button>None</button>
+    </p>
+    <script>
+      var buttons = [...document.querySelectorAll('#float button')];
+      buttons.forEach(button => button.onclick = (e) => [...document.querySelectorAll('#float .toggle')].forEach(ele =>
+        ele.style.cssFloat = e.target.innerHTML));
+    </script>
+  </div>
+  <div id="clear">
+    <p class="toggle">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+    <p class="toggle cleared">
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+    <p>
+      When travelling in Asia, I was struck by how many different kinds of banana were available - many of which hand
+      unique flavours and which were only available within a small region.
+    </p>
+    <p>
+      <button>Left</button>
+      <button>Right</button>
+      <button>None</button>
+    </p>
+    <script>
+      var buttons = [...document.querySelectorAll('#clear button')];
+      buttons.forEach(button => button.onclick = (e) => [...document.querySelectorAll('#clear .toggle')].forEach(ele =>
+        ele.style.cssFloat = e.target.innerHTML));
+    </script>
+  </div>
+</body>
+
+</html>

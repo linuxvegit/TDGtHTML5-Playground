@@ -1,0 +1,117 @@
+div {
+  clear: both;
+}
+
+#transition p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+#transition .banana {
+  font-size: large;
+  border: medium solid black;
+  transition-delay: 10ms;
+  transition-duration: 250ms;
+}
+
+#transition .banana:hover {
+  font-size: x-large;
+  border: medium solid white;
+  background-color: green;
+  color: white;
+  padding: 4px;
+  transition-delay: 100ms;
+  transition-property: background-color, color, padding, font-size, border;
+  transition-duration: 500ms, 1000ms, 500ms;
+  transition-timing-function: linear;
+}
+
+#animation p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+#animation .banana {
+  font-size: large;
+  border: medium solid black;
+  animation-delay: 100ms;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: GrowShrink;
+}
+
+#animation .banana:hover {
+  animation-delay: 100ms;
+  animation-duration: 500ms;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-name: GrowShrink1, ColorSwap;
+  animation-direction: alternate;
+}
+
+@keyframes GrowShrink1 {
+  to {
+    font-size: x-large;
+    padding: 4px;
+  }
+}
+
+@keyframes ColorSwap {
+  to {
+    border: medium solid white;
+    background-color: green;
+  }
+}
+
+@keyframes GrowShrink {
+  from {
+    font-size: xx-large;
+    background-color: red;
+  }
+
+  50% {
+    background-color: yellow;
+    padding: 1px;
+  }
+
+  75% {
+    color: white;
+    padding: 2px;
+  }
+
+  to {
+    font-size: x-large;
+    border: medium solid white;
+    background-color: green;
+    color: white;
+    padding: 4px;
+  }
+}
+
+#transform p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+#transform .banana {
+  display: inline-block;
+  font-size: x-large;
+  border: medium solid black;
+  background-color: green;
+  color: white;
+  padding: 4px;
+  transform: rotate(-45deg) scaleX(1.2);
+  transform-origin: right top;
+}
+
+#transform .banana:hover {
+  transition-duration: 1.5s;
+  transform: rotate(360deg);
+}

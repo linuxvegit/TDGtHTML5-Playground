@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Using Text Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="align">
+    <h3>align</h3>
+    <p id="fruittext">
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+    <p>
+      <button>Start</button>
+      <button>End</button>
+      <button>Left</button>
+      <button>Right</button>
+      <button>Justify</button>
+      <button>Center</button>
+    </p>
+    <script>
+      [...document.querySelectorAll('#align button')].forEach(button => button.onclick = e => document.getElementById(
+        'fruittext').style.textAlign = e.target.innerHTML);
+    </script>
+  </div>
+
+  <div id="whitespace">
+    <h3>white-space</h3>
+    <p id="fruittext1">
+      There are lots of different kinds of fruit - there are over 500
+      varieties
+
+      of banana alone. By the time we add the countless type of
+      apples, oranges, and other well-known fruit, we are faced with
+      thousands of choices.
+
+      One of the most interesting aspects of fruit is the
+      variety available in each country. I live near London,
+
+      in an area which is
+      known for its apples.
+    </p>
+  </div>
+
+  <div id="spacing">
+    <h3>spacing</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+  </div>
+
+  <div id="word-wrap">
+    <h3>word-wrap</h3>
+    <p class="first">
+      There are lots of different kinds of fruit - there are over 500 varieties of madeupfruitwithaverylongname alone.
+    </p>
+    <p class="second">
+      There are lots of different kinds of fruit - there are over 500 varieties of madeupfruitwithaverylongname alone.
+    </p>
+  </div>
+
+  <div id="text-indent">
+    <h3>text-indent</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+  </div>
+
+  <div id="text-detr">
+    <h3>text-decoration & text-transform</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+  </div>
+  <div id="text-shadow">
+    <h3>text-shadow</h3>
+    <h1>Thoughts about Fruit</h1>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+      One of the most interesting aspects of fruit is the variety available in each country. I live near London, in an
+      area which is known for its apples.
+    </p>
+  </div>
+
+  <div id="font-family">
+    <h3>font-family</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+
+  <div id="font-size">
+    <h3>font-size</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of <span class="first">banana</span>
+      alone. By the time we add the countless type of <span class="second">apples</span>, oranges, and other well-known
+      fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+
+  <div id="font-west">
+    <h3>font-weight & font-style</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of <span class="first">banana</span>
+      alone. By the time we add the countless type of <span class="second">apples</span>, oranges, and other well-known
+      fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+
+  <div id="font-face">
+    <h3>@font-face</h3>
+    <p>
+      There are lots of different kinds of fruit - there are over 500 varieties of banana alone. By the time we add the
+      countless type of apples, oranges, and other well-known fruit, we are faced with thousands of choices.
+    </p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+#padding p {
+  border: 10px double black;
+  background-color: lightgray;
+  background-clip: content-box;
+  padding: .5em .8em .3em .6em;
+}
+
+#padding2 p {
+  border: 10px solid black;
+  background-color: lightgray;
+  border-radius: 1em 4em 1em 4em;
+  padding: 5px 25px 5px 40px;
+}
+
+#margin img {
+  border: 4px solid black;
+  background-color: lightgray;
+  padding: 4px;
+  margin: 4px 20px;
+}
+
+#size div {
+  width: 75%;
+  height: 100px;
+  border: thin solid black;
+}
+
+#size img {
+  background-color: lightgray;
+  border: 4px solid black;
+  margin: 2px;
+  height: 50%;
+}
+
+#size .first {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px;
+}
+
+#size .second {
+  box-sizing: content-box;
+}
+
+#size1 img {
+  background-color: lightgray;
+  border: 4px solid black;
+  margin: 2px;
+  box-sizing: border-box;
+  min-width: 100px;
+  width: 50%;
+  max-width: 200px;
+}
+
+#overflow p {
+  width: 200px;
+  height: 100px;
+  border: medium double black;
+}
+
+#overflow1 p {
+  width: 200px;
+  height: 100px;
+  border: medium double black;
+}
+
+#overflow1 .first {
+  overflow: hidden;
+}
+
+#overflow1 .second {
+  overflow: scroll;
+}
+
+#visibility tr>th {
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+
+#visibility tr>th:only-of-type {
+  text-align: right;
+  background-color: lightgray;
+  color: gray;
+}
+
+#block p {
+  border: medium solid black;
+}
+
+#block span {
+  display: block;
+  border: medium double black;
+  margin: 2px;
+}
+
+#inline p {
+  display: inline;
+}
+
+#inline span {
+  display: inline;
+  border: medium double black;
+  margin: 2em;
+  width: 10em;
+  height: 2em;
+}
+
+#inline-block p {
+  display: inline;
+}
+
+#inline-block span {
+  display: inline-block;
+  border: medium double black;
+  margin: 2em;
+  width: 10em;
+  height: 2em;
+}
+
+#run-in p {
+  display: block;
+}
+
+#run-in span {
+  display: run-in;
+  border: medium double black;
+}
+
+#run-in1 p {
+  display: inline;
+}
+
+#run-in1 span {
+  display: run-in;
+  border: medium double black;
+}
+
+#float p.toggle {
+  float: left;
+  border: medium double black;
+  width: 40%;
+  margin: 2px;
+  padding: 2px;
+}
+
+#clear p.toggle {
+  float: left;
+  border: medium double black;
+  width: 40%;
+  margin: 2px;
+  padding: 2px;
+}
+
+#clear p.cleared {
+  clear: left;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Using CSS Selector II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <a href="http://apress.com">Visit the Apress website.</a>
+  <p>I like
+    <span lang="en-uk" class="class2">apples</span> and
+    <span>oranges</span>.</p>
+  <a href="http://w3c.org">Visit the W3C website.</a>
+  <p>I like
+    <span lang="en-uk" class="class2">apples</span> and oranges.
+  </p>
+  <p>I like
+    <span lang="en-uk" class="class2">apples</span> and
+    <mark>oranges</mark>.
+  </p>
+
+  <textarea name="enabled" id="enabled">This is an enabled textarea.</textarea>
+  <textarea name="disabled" id="disabled" disabled>This is a disabled textarea.</textarea>
+  <form action="/form" method="POST">
+    <p>
+      <p>
+        <label for="apples">Do you like apples: </label>
+        <input type="checkbox" id="apples" name="apples">
+        <span>This will go red when checked.</span>
+      </p>
+      <p>
+        <label for="name">Name:
+          <input required type="text" name="name" id="name">
+        </label>
+      </p>
+      <p>
+        <label for="email">E-mail:
+          <input type="email" name="tel" id="tel">
+        </label>
+      </p>
+      <p>
+        <label for="price">$ per unit in your area:
+          <input type="number" min="0" max="100" value="1" name="price" id="price">
+        </label>
+      </p>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </p>
+  </form>
+</body>
+
+</html>

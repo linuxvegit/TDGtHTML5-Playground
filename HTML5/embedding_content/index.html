@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Embedding Content</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <base target="myframe">
+</head>
+
+<body>
+  <p>
+    <a href="otherpage.html">
+      <img src="image.png" alt="image" ismap width="200" height="200">
+    </a>
+  </p>
+
+  <p>
+    <img src="triathlon.png" alt="Triathlon Imag" usemap="#map">
+  </p>
+
+  <map name="map">
+    <area shape="rect" coords="3,5,68,62" href="swimpage.html" alt="Swimming">
+    <area shape="circle" coords="99,34,29" href="cyclepage.html" alt="Cycling">
+    <area shape="default" href="otherpage.html" alt="default">
+  </map>
+
+  <header>
+    <h1>Things I like</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="fruits.html" target="frame">Fruits I Like</a>
+        </li>
+        <li>
+          <a href="activities.html">Activities I Like</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <iframe name="myframe" width="300" height="100" seamless sandbox="allow-forms"></iframe>
+
+  <embed src="http://www.youtube.com/v/qzA60hHca9s?version=3" type="application/x-shockwave-flash" width="560" height="349"
+    allowfullscreen="true">
+
+  <object data="http://www.youtube.com/v/qzA60hHca9s?version=3" type="application/x-shockwave-flash" width="560" height="349">
+    <param name="allowFullScreen" value="true">
+    <b>Sorry!</b> We can't display this content
+  </object>
+
+  <p>
+    <object data="triathlon.png" type="image/png" usemap="#map"></object>
+  </p>
+
+  <object type="text/html" name="frame" width="300" height="100"></object>
+
+  <progress id="progress" value="10" max="100"></progress>
+  <meter id="meter" value="90" min="10" max="100" low="40" high="80" optimum="60"></meter>
+  <p>
+    <button type="button" value="30">30%</button>
+    <button type="button" value="50">50%</button>
+    <button type="button" value="60">60%</button>
+    <button type="button" value="90">90%</button>
+  </p>
+
+  <script>
+    const buttons = Array.prototype.slice.call(document.getElementsByTagName('BUTTON'));
+    const progress = document.getElementById('progress');
+    const meter = document.getElementById('meter');
+    buttons.forEach(button => button.onclick = e => {
+      progress.value = e.target.value;
+      meter.value = e.target.value;
+    });
+  </script>
+
+</body>
+
+</html>

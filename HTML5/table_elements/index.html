@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://192.168.50.128:8000/HTML5/table_elements/ -->
+<html class="gr__192_168_50_128"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Table Elements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./index_files/main.css">
+  <script src="./index_files/main.js.下载"></script>
+  <style>
+    thead th,
+    tfoot th {
+      text-align: left;
+      background: gray;
+      color: white;
+    }
+
+    tbody th {
+      text-align: right;
+      background: lightgray;
+      color: gray;
+    }
+
+    [colspan],
+    [rowspan] {
+      font-weight: bold;
+      border: solid medium black;
+    }
+
+    thead [colspan],
+    tfoot [colspan] {
+      text-align: center;
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: large;
+      margin-bottom: 5px;
+    }
+
+    #colgroup1 {
+      background-color: red;
+    }
+
+    #col3 {
+      background-color: green;
+      font-size: small;
+    }
+  </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <table border="1">
+    <caption>Results of the 2011 Fruit Survey</caption>
+    <colgroup id="colgroup1" span="3">
+    </colgroup><colgroup span="2">
+      <col id="col1" span="1">
+      <col id="col3">
+    </colgroup>
+    <thead>
+      <tr>
+        <th id="rank">Rank</th>
+        <th id="name">Name</th>
+        <th id="color">Color</th>
+        <th id="sizeAndVotes" colspan="2" rowspan="1" headers="" scope="">Size &amp; Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th id="first" headers="rank">Favorite:</th>
+        <td headers="name first">Apples</td>
+        <td headers="color first">Green</td>
+        <td headers="sizeAndVotes first">Medium</td>
+        <td headers="sizeAndVotes first">500</td>
+      </tr>
+      <tr>
+        <th id="second">2nd Favorite:</th>
+        <td>Oranges</td>
+        <td>orange</td>
+        <td>large</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <th id="third">3rd Favorite:</th>
+        <td>Pomegranate</td>
+        <td colspan="2" rowspan="2">Pomegranates and cherries can both come in a range of colors and sizes.</td>
+        <td>203</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Join 4th:</th>
+        <td>Cherries</td>
+        <td rowspan="2">75</td>
+      </tr>
+      <tr>
+        <td>Pineapple</td>
+        <td>Brown</td>
+        <td>Very Large</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="5">© 2011 Adam Freeman Fruit Data Enterprises</th>
+      </tr>
+    </tfoot>
+  </table>
+
+
+</body></html>

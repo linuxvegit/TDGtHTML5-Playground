@@ -1,0 +1,54 @@
+#color p {
+  padding: 5px;
+  border: medium double black;
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+#color .banana {
+  font-size: x-large;
+  border: medium solid white;
+  background-color: green;
+  color: white;
+  opacity: 0.4;
+  cursor: progress;
+}
+
+#color a:hover {
+  color: red;
+}
+
+#table table {
+  border-collapse: separate;
+  /* border-collapse: collapse; */
+  border-spacing: 10px;
+  empty-cells: hide;
+  caption-side: bottom;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#table th,
+td {
+  padding: 2px;
+}
+
+#list ol {
+  list-style-type: lower-alpha;
+}
+
+#list ul {
+  list-style-image: url('banana-vsmall.png');
+}
+
+#list .inside {
+  list-style-position: inside;
+}
+
+#list .outside {
+  list-style-position: outside;
+}
+
+#list li {
+  background-color: lightgray;
+}

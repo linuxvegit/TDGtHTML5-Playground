@@ -1,0 +1,61 @@
+span.class2 {
+  border: thin black solid;
+  padding: 4px;
+}
+
+#w3canchor {
+  border: thin greenyellow solid;
+  padding: 4px;
+}
+
+[href] {
+  border: thin yellowgreen solid;
+  padding: 4px;
+}
+
+[href="http://apress.com"],
+[href^="http"],
+[http$=".com"],
+[http*="apress"] {
+  border: thin aqua solid;
+  padding: 4px;
+}
+
+[class~="class2"] {
+  border: thin saddlebrown solid;
+  padding: 4px;
+}
+
+[lang|="en"] {
+  border: thin cadetblue solid;
+  padding: 4px;
+}
+
+p::first-line {
+  background-color: gray;
+  color: white;
+}
+
+::first-letter {
+  background-color: gray;
+  color: white;
+  border: thin black solid;
+  padding: 4px;
+}
+
+a:before {
+  content: "Click here to ";
+}
+
+a:after {
+  content: "!";
+}
+
+body {
+  counter-reset: paracount 5 othercounter;
+}
+
+p:before {
+  content: counter(paracount, lower-alpha) ". ";
+  counter-increment: paracount 3;
+}

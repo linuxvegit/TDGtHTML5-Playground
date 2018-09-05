@@ -1,0 +1,98 @@
+#basic-border {
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  border-top-left-radius: 20px 15px;
+  padding: 16px;
+}
+
+.border-style {
+  padding: 16px;
+  margin: 16px;
+  float: left;
+}
+
+.border-style-dashed {
+  border: thick black dashed;
+}
+
+.border-style-dotted {
+  border: thick black dotted;
+}
+
+.border-style-double {
+  border: thick black double;
+}
+
+.border-style-groove {
+  border: thick gray groove;
+}
+
+.border-style-inset {
+  border: thick gray inset;
+}
+
+.border-style-outset {
+  border: thick gray outset;
+}
+
+.border-style-ridge {
+  border: thick gray ridge;
+}
+
+.border-style-solid {
+  border: thick black solid;
+}
+
+#first {
+  border: medium black solid;
+  border-radius: 20px / 15px;
+}
+
+#second {
+  border: medium black solid;
+  border-radius: 50% 20px 25% 5em / 25% 15px 40px 55%;
+}
+
+#image-first {
+  border: 50px solid transparent;
+  border-image-source: url(bordergrid.png);
+  border-image-slice: 30;
+  border-image-width: 50px;
+  border-image-repeat: round space;
+  border-image-outset: 4px;
+}
+
+#background-first {
+  border: medium solid black;
+  background-color: lightgray;
+  background-image: url(banana.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+  padding: 16px;
+  background-origin: border-box;
+  background-clip: content-box;
+}
+
+textarea {
+  border: medium solid black;
+  background-color: lightgray;
+  background-image: url(banana.png);
+  background-size: 60px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#shadow {
+  box-shadow: 5px 4px 10px 2px gray;
+}
+
+#shadow1 {
+  box-shadow: 5px 4px 10px 2px gray, 4px 4px 6px gray inset;
+}
+
+#outline {
+  outline: thick solid black;
+  outline-offset: 4px;
+  border: thin solid gray;
+}
